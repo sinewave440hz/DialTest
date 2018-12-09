@@ -177,7 +177,7 @@ export default class CircularSlider extends Component<Props, State> {
     return (
       <View
         ref={r => this.container = r }
-        style={{ alignItems: 'center' }}
+        style={{ alignItems: 'center', overflow: 'hidden' }}
         {...this._panResponder.panHandlers}
       >
         <Svg
